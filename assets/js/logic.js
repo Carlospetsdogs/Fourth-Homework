@@ -40,10 +40,23 @@ choicesEl.innerHTML = '';
 for (var i = 0; i < currentQuestion.choices.length; i++){
     var choice = currentQuestion.choices[i];
     var choiceNode = document.createElement('button');
-    choiceNode.setAttribute('class','choice');
+    choiceNode.setAttribute('class','answer');
     choiceNode.setAttribute('value', choice);
 
     choiceNode.textContent = i + 1 + '.' + choice;
+
+    choicesEl.appendChild(choiceNode);
+ }
 }
 
+function questionClick(event) {
+    var buttonEl = event.target;
+
+    if (!buttonEl.matches('.answer')) {
+       return;
+    }
+
+
 }
+
+startBtn.onclick = startQuiz
