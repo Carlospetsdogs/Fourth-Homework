@@ -5,9 +5,16 @@ body {
 }
 
 a {
-    color: blue;
+    color: rgb(245, 245, 248);
     text-decoration: solid;
     transition: color 0.3s;
+    background-size: contain;
+    background-color: black;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: red;
 }
 
 p {
@@ -22,10 +29,6 @@ h1 {
     font-size: 50px;
     color: rgb(102, 2, 233);
     text-decoration: underline;
-}
-
-a:hover {
-    color: red;
 }
 
 button {
@@ -83,6 +86,7 @@ li:nth-child(odd) {
 }
 
 .scores {
+    font-size: 25px;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -98,8 +102,16 @@ li:nth-child(odd) {
 }
 
 .timer {
+    font-size: 25px;
     position: absolute;
     top: 15px;
     right: 15px;
-    color: blue;
+    color: rgb(237, 237, 244);
+    background-size: contain;
+    background-color: rgb(13, 12, 13);
+    border-radius: 5px;
+}
+
+.timer:hover {
+ color: red;
 }
