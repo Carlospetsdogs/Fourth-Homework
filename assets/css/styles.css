@@ -1,12 +1,27 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
+    background-color: #cee9ff;
 }
 
 a {
     color: blue;
     text-decoration: solid;
     transition: color 0.3s;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    color: blue;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(102, 2, 233);
+    text-decoration: underline;
 }
 
 a:hover {
@@ -86,4 +101,5 @@ li:nth-child(odd) {
     position: absolute;
     top: 15px;
     right: 15px;
+    color: blue;
 }
