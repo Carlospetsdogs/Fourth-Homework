@@ -8,7 +8,7 @@ Answer the coding questions within the alloted time and finish to see your score
 
 ## Deployed website 
 
+https://carlospetsdogs.github.io/Fourth-Homework-Quiz/index.html
 
 
-
-
+![Screenshot](./assets/Screenshot%202024-03-04%20at%2011.17.25 AM.png)
