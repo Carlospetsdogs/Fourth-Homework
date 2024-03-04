@@ -56,7 +56,36 @@ function questionClick(event) {
        return;
     }
 
+if (buttonEl.value !==questions[currentQuestionIndex].answer){
+    time -= 10;
 
+    if(time<0) {
+        time = 0;
+    }
+
+    timerEl.textContent = time;
+    sfxWrong.play();
+
+    feedbackEl.textContent  = 'Wrong!';
+}else {
+    sfxRight.play();
+    feedbackEl.textContent = 'Correct!';
 }
+
+feedbackEl.setAttribute('class','feedback');
+setTimeout(function () {
+    feedbackEl.setAttribute('class','feedback hide');
+}, 1000);
+
+currentQuestionIndex++;
+
+if (time <= 0 || currentQuestionIndex === questions.length) {
+    quizEnd ();
+}else {
+    getQuestion();
+ }
+}
+
+
 
 startBtn.onclick = startQuiz
