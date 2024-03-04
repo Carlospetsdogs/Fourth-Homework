@@ -12,8 +12,8 @@ var initialsEl = document.getElementById('initials');
 var feedbackEl = document.getElementById('feedback');
 
 // sound effects here
-var sfxRight = new Audio()
-var sfxWrong = new Audio()
+var sfxRight = new Audio('assets/sounds/Correct.wav');
+var sfxWrong = new Audio('assets/sounds/Incorrect.wav');
 
 function startQuiz() {
     var startScreenEl = document.getElementById('start-screen');
