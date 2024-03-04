@@ -23,7 +23,7 @@ var questions = [
             'Allows you to utilize the DOM more efficiently',
             'Prevents event listeners from ever being utilized',
         ],
-        answer: 'prevent the default action of an event from occurring.',
+        answer: 'Prevents the default action of an event from occurring.',
     },
     {
         title: 'What is the main purpose of the console.log function?',
