@@ -40,7 +40,7 @@ choicesEl.innerHTML = '';
 for (var i = 0; i < currentQuestion.choices.length; i++){
     var choice = currentQuestion.choices[i];
     var choiceNode = document.createElement('button');
-    choiceNode.setAttribute('class','answer');
+    choiceNode.setAttribute('class','choice');
     choiceNode.setAttribute('value', choice);
 
     choiceNode.textContent = i + 1 + '.' + choice;
@@ -52,23 +52,25 @@ for (var i = 0; i < currentQuestion.choices.length; i++){
 function questionClick(event) {
     var buttonEl = event.target;
 
-    if (!buttonEl.matches('.answer')) {
+    if (!buttonEl.matches('.choice')) {
        return;
     }
 
 if (buttonEl.value !==questions[currentQuestionIndex].answer){
     time -= 10;
 
-    if(time<0) {
+    if(time < 0) {
         time = 0;
     }
 
     timerEl.textContent = time;
+    
     sfxWrong.play();
 
     feedbackEl.textContent  = 'Wrong!';
 }else {
     sfxRight.play();
+    
     feedbackEl.textContent = 'Correct!';
 }
 
@@ -80,8 +82,8 @@ setTimeout(function () {
 currentQuestionIndex++;
 
 if (time <= 0 || currentQuestionIndex === questions.length) {
-    quizEnd ();
-}else {
+    quizEnd();
+   } else {
     getQuestion();
  }
 }
@@ -89,8 +91,8 @@ if (time <= 0 || currentQuestionIndex === questions.length) {
 function quizEnd() {
     clearInterval(timerId);
 
-    var endSCreenEl = document.getElementById('end-screen');
-    endSCreenEl.removeAttribute('class');
+    var endScreenEl = document.getElementById('end-screen');
+    endScreenEl.removeAttribute('class');
 
     var finalScoreEl = document.getElementById('final-score');
     finalScoreEl.textContent = time;
