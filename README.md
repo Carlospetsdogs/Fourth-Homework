@@ -1,14 +1,12 @@
-## Acceptance Criteria
+## Coding Quiz Assignment!
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
+ The purpose of this assignment was to create a functioning quiz with coding based questions to be used for practicing.
+
+# Usage
+
+Answer the coding questions within the alloted time and finish to see your score as well as previous scores.
+
+## Deployed website 
+
+
+
